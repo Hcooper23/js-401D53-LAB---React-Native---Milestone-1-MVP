@@ -1,53 +1,28 @@
-# LAB - React Native - Milestone 1: MVP
+# LAB - React Native - Milestone 2: Polish and Delivery
+Complete the work on your phone application.
 
-Create your first native phone/device application using React Native, tapping into at least 2 phone features.
+You will be presenting your application live to your class
 
-## Before you begin
+## Assignment Recap
+Create your first Phone App. What it does and how it looks is up to you.
 
-Refer to Getting Started in the lab submission instructions for complete setup, configuration, deployment, and submission instructions.
+### Application Requirements
 
-Create a new GitHub repository titled with your course code and this lab number (i.e. js-401n15-class-10)
+- Use 2 screens / components
+- Use and share state between components/screens
+- Use at least 1 native device feature (Contacts, Camera, GPS, etc)
+- Properly Documented for End Users
+- Live Demo & Presentation
 
-You will be submitting the URL to the README (docs) at the root of this repository for your assignment.
+## Milestone 2 - Product Delivery (This Lab)
 
-## Getting Started
+As you complete your RNA, switch your focus to the user experience.
 
-Remote Development (Optional)
-
-    - Create an account at https://expo.io
-    - Confirm login for https://snack.expo.io
-
-Local Development (Required)
-
-Leverage local Expo functionality and the Expo Go Application on your moblie device to scan the QR code generated in your local terminal after running the command npx expo start or npx expo start --tunnel to interact with your application throughout developmemnt.
-
-## Assignment
-
-Over the next 2 lab coding sessions, you will create your first Phone App. What it does and how it looks is up to you. This is an opportunity to play around with whats possible in React Native and to get a feel for how you can get into the various device features.
-
-This is a 2-session assignment, after which you will live-demo your phone app to the class (at the start of class 43)
-
-Lab/Coding Session #1 - Focus on getting your dev system up and operational, getting “proof of life” and reaching your MVP in terms of baseline functionality
-
-Lab/Coding Session #2 - Add in the device features, polish, and prepare for deployments.
-
-## Requirements
-
-    - Use at least 1 native device feature (Contacts, Camera, GPS, etc)
-    - High Fidelity Styling and UX
-        - Good starting points:
-            - Native Base
-            - Builder X
-    - Properly Documented for End Users
-    - Live Demo & Presentation
-
-## Milestone 1 - MVP (This Lab)
-
-    - Deliver your MVP for raw functionality
-    - Your dev environment should be properly working
-    - Other users should be able to scan your QR and see your app on any device
-    - All of your core “features” should be working properly
-        - Un-Styled is fine. We’re looking for things to buzz, light up, detect movement, etc.
+- Quality and Thoughtful Styling using css-in-js
+- Right sized tap targets, good contrast
+- Dark and Light Modes
+- Well thought through UX
+  - Be considerate of individuals that primarily use their thumbs, left or right hands
 
 ## User Stories
 
@@ -73,6 +48,12 @@ As a user, I want the app to continuously track my location so that I can view m
 
 These user stories focus on the core functionality related to GPS in the app. You can further expand these stories or modify them based on your specific app requirements and desired features.
 
+- User Story 1:
+As a user, I want to be able to view my last known location on the home screen of the app. This way, I can quickly see where I was located during my last use of the app without having to manually search for it. The location should be displayed prominently and clearly with the latitude and longitude values. Additionally, there should be a refresh button to update the location in case it has changed since the app was last opened.
+
+- User Story 2:
+As a user, I want the home screen of the app to provide a visual representation of my last known location using a map. This way, I can have a better understanding of the area and surroundings of the location. The map should be centered on the latitude and longitude coordinates of the last known location, and it should display a marker indicating the exact point. The map should have a suitable zoom level to provide an overview of the area.
+
 ### Operating Instructions
 
 1. [Fork Repo](https://github.com/Hcooper23/js-401D53-LAB---React-Native---Milestone-1-MVP) down from GitHub
@@ -80,3 +61,10 @@ These user stories focus on the core functionality related to GPS in the app. Yo
 3. Run in Terminal expo start or npm start
 4. Open your camera function to scan a QR code from the terminal that will open up EXPO Go on mobile device.
 5. Phone will detect the exact location of the user and will render and image seen ![Phone Image](./assets/GPS%20Location%20Phone.PNG)
+
+## Phone Renderings 
+
+Here is a screen shoot of the map you will see when you first request location.![Home Screen](./assets/Home%20Screen.jpg)
+Here is showing the ability to zoom in as you would on standard Apple Maps. ![Map Zoom](./assets/Zoom%20Map.PNG)
+This is the history screen. The goal is to have it render the last 5 calls done by the phone for location and list them with no map.![History Screen](./assets/History.PNG)
+The error I receive when switching to History screen from terminal.![Errors](./assets/Terminal%20Errors.png)
