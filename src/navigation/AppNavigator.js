@@ -1,22 +1,16 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from '../screens/HomeScreen';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import HomeScreen from '../components/HomeScreen';
+import SecondScreen from '../components/SecondScreen';
 
-const Stack = createStackNavigator();
+const AppNavigator = createStackNavigator(
+  {
+    Home: HomeScreen,
+    Second: SecondScreen,
+  },
+  {
+    initialRouteName: 'Home',
+  }
+);
 
-const AppNavigator = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ title: 'Home' }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-};
-
-export default AppNavigator;
+export default createAppContainer(AppNavigator);
